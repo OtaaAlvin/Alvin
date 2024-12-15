@@ -1,0 +1,186 @@
+/* .pic{
+    height: 40em;
+    width: 66em; 
+}
+body{
+background: rgba (0, 0, 0, 0.5) url('car.jpg') center center fixed;
+background-blend-mode: darken;
+background-size: cover; 
+background-position: center;
+} */
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgba(0, 0, 0, 0.5) url('./assets/carr.jpeg') center center fixed;
+    background-blend-mode: darken;
+background-size: cover;
+background-position: center;
+position: relative;
+}
+.main{
+    padding: 0.8%;
+    font-size: x-large;
+}
+nav{padding: 24px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.logo h3{
+    width: 150px;
+    font-size: 30px;
+    cursor: pointer;
+    color: yellowgreen;
+}
+
+.nav-links{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links a{
+    margin-left: 36px;
+    text-decoration: none;
+    color: aquamarine;
+    transition: 2s;
+}
+
+.nav-links a:hover{
+    background-color: #000;
+    padding: 11px;
+}
+
+#scroll{
+    background: yellow;
+    color: #000;
+    padding: 10px 27px;
+    border-radius: 5px;
+    font-family: sans-serif;
+
+    font-size: 20px;
+}
+
+.content{
+    margin-top: 150px;
+    margin-left: 150px;
+    color: #fff;
+    position: relative;
+    font-size: xx-large;
+
+
+}
+
+.content h1{
+    font-size: 60px;
+    margin-bottom: 17%;
+    text-align: center;
+    margin-left: 45%;
+}
+.search{
+    background: #fff;
+    width: fit-content;
+    margin: 20px 0;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    background: transparent;
+    width: 500px;
+    border: 0;
+    outline: none;
+
+}
+
+button{
+    padding: 10px 28px;
+    margin-left: 18%;
+    background-color: yellow;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.vehicles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    position: relative;
+    
+}
+
+.automade{
+    width: 30%;
+    position: relative;
+}
+
+.automade img{
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 6px;
+    padding: 8px;
+    
+
+    
+
+}
+
+.finish{
+    text-align: center;
+    margin-left: 0%;
+}
+
+.form input{
+    height: 4rem;
+    width: 17rem;
+    font-size: large;
+    border-radius: 5px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 6px;
+    padding: 8px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: -1;
+}
+
+#contaii{
+    background-color: rgb(223, 223, 32);
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#scroll{
+    color: black;
+}
