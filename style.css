@@ -18,7 +18,7 @@ background-position: center;
 }
 
 body{
-    background: rgba(0, 0, 0, 0.5) url('./assets/carr.jpeg') center center fixed;
+    background: rgba(0, 0, 0, 0.5) url('carr.jpeg') center center fixed;
     background-blend-mode: darken;
 background-size: cover;
 background-position: center;
