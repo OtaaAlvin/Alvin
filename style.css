@@ -18,7 +18,7 @@ background-position: center;
 }
 
 body{
-    background: rgba(0, 0, 0, 0.5) url('carr.jpeg') center center fixed;
+    background: rgba(0, 0, 0, 0.5) url('Assets/carr.jpeg') center center fixed;
     background-blend-mode: darken;
 background-size: cover;
 background-position: center;
@@ -70,11 +70,11 @@ nav{padding: 24px 0;
 }
 
 .content{
-    margin-top: 150px;
-    margin-left: 150px;
+    margin-top: 50px;
+    margin-left: 50px;
     color: #fff;
     position: relative;
-    font-size: xx-large;
+    font-size: large;
 
 
 }
@@ -82,8 +82,8 @@ nav{padding: 24px 0;
 .content h1{
     font-size: 60px;
     margin-bottom: 17%;
-    text-align: center;
-    margin-left: 45%;
+    text-align: left;
+    
 }
 .search{
     background: #fff;

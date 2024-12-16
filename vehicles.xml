@@ -1,0 +1,102 @@
+<vehicles>
+    <vehicle>
+        <id>1</id>
+        <make>Toyota</make>
+        <model>Harrier</model>
+        <year>2019</year>
+        <color>Red</color>
+        <price>Ksh 2500000</price>
+        <mileage>30000</mileage>
+        <photo>Assets/harrier.jpeg</photo>
+    </vehicle>
+    <vehicle>
+        <id>2</id>
+        <make>Honda</make>
+        <model>Civic</model>
+        <year>2018</year>
+        <color>Blue</color>
+        <price>Ksh 2310000</price>
+        <mileage>35000</mileage>
+        <photo>Assets/civic.jpeg</photo>
+    </vehicle>
+    <vehicle>
+        <id>3</id>
+        <make>Ford</make>
+        <model>F-150</model>
+        <year>2020</year>
+        <color>Black</color>
+        <price>Ksh 10500000</price>
+        <mileage>25000</mileage>
+        <photo>Assets/ford.jpeg</photo>
+    </vehicle>
+    <vehicle>
+        <id>4</id>
+        <make>Chevrolet</make>
+        <model>Silverado</model>
+        <year>2017</year>
+        <color>White</color>
+        <price>Ksh 6000000</price>
+        <mileage>112000</mileage>
+        <photo>Assets/chevy.jpeg</photo>
+    </vehicle>
+    <vehicle>
+        <id>5</id>
+        <make>Jeep</make>
+        <model>Wrangler</model>
+        <year>2021</year>
+        <color>Green</color>
+        <price>Ksh 14000000</price>
+        <mileage>20000</mileage>
+        <photo>Assets/jeep.jpeg</photo>
+    </vehicle>
+    <vehicle>
+        <id>6</id>
+        <make>Nissan</make>
+        <model>Altima</model>
+        <year>2016</year>
+        <color>Silver</color>
+        <price>Ksh 2250000</price>
+        <mileage>28000</mileage>
+        <photo>Assets/altima.jpeg</photo>
+    </vehicle>
+    <vehicle>
+        <id>7</id>
+        <make>BMW</make>
+        <model>3 Series</model>
+        <year>2019</year>
+        <color>Gray</color>
+        <price>Ksh 2800000</price>
+        <mileage>32000</mileage>
+        <photo>Assets/bmw.jpeg</photo>
+    </vehicle>
+    <vehicle>
+        <id>8</id>
+        <make>Mercedes-Benz</make>
+        <model>E-Class</model>
+        <year>2020</year>
+        <color>Black</color>
+        <price>Ksh 3800000</price>
+        <mileage>18000</mileage>
+        <photo>Assets/merc.jpeg</photo>
+    </vehicle>
+    <vehicle>
+        <id>9</id>
+        <make>Mercedes-Benz</make>
+        <model>Gwagon</model>
+        <year>2017</year>
+        <color>Silver</color>
+        <price>Ksh 29000000</price>
+        <mileage>25000</mileage>
+        <photo>Assets/gwagon.jpeg</photo>
+    </vehicle>
+    <vehicle>
+        <id>10</id>
+        <make>Volvo</make>
+        <model>XC90</model>
+        <year>2021</year>
+        <color>White</color>
+        <price>Ksh 4200000</price>
+        <mileage>15000</mileage>
+        <photo>Assets/volvo.jpeg</photo>
+    </vehicle>
+</vehicles>

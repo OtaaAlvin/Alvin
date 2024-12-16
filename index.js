@@ -1,39 +1,56 @@
+// Enhanced JavaScript code to handle vehicle data from an XML source
+
 // Retrieving the element where cars will be displayed
 const cars = document.getElementById("cars");
 
-// Fetching vehicle data from the server
-fetch('https://json-server-zrvf.onrender.com/vehicles')
-  .then(response => response.json()) // Converting response to JSON
+// Fetching vehicle data from the XML file
+fetch('vehicles.xml')
+  .then(response => response.text()) // Getting XML data as text
   .then(data => {
-   
-    // Looping through each vehicle data
-    data.forEach(vehicle => {
-    
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(data, "application/xml");
+
+    // Selecting all vehicle elements from the XML
+    const vehicles = xmlDoc.getElementsByTagName("vehicle");
+
+    // Looping through each vehicle element
+    Array.from(vehicles).forEach(vehicle => {
+      // Extracting data from XML
+      const id = vehicle.getElementsByTagName("id")[0].textContent;
+      const make = vehicle.getElementsByTagName("make")[0].textContent;
+      const model = vehicle.getElementsByTagName("model")[0].textContent;
+      const year = vehicle.getElementsByTagName("year")[0].textContent;
+      const color = vehicle.getElementsByTagName("color")[0].textContent;
+      const price = vehicle.getElementsByTagName("price")[0].textContent;
+      const mileage = vehicle.getElementsByTagName("mileage")[0].textContent;
+      const photo = vehicle.getElementsByTagName("photo")[0].textContent;
+
       // Creating a div element to display vehicle details
       const div = document.createElement("div");
       div.className = "automade"; // Adding class for styling
-      div.id = vehicle.id; // Assigning vehicle ID as div ID
-     
+      div.id = id; // Assigning vehicle ID as div ID
+
       // Filling div with vehicle information
       div.innerHTML = `
-        <img src="${vehicle.photo}"/>
-        <p>${vehicle.make} ${vehicle.model} ${vehicle.year} ${vehicle.color}</p>
-        <p>PRICE ${vehicle.price}</p>
-        <p>MILEAGE ${vehicle.mileage}</p>
-        <button id="press${vehicle.id}" >BUY NOW</button>
+        <img src="${photo}" alt="${make} ${model}"/>
+        <p>${make} ${model} ${year} ${color}</p>
+        <p>PRICE: ${price}</p>
+        <p>MILEAGE: ${mileage}</p>
+        <button id="press${id}" >BUY NOW</button>
       `;
       // Styling the div
       div.style.color = "black";
       div.style.width = "30%";
       div.style.backgroundColor = "white";
+
       // Appending the div to the cars element
       cars.appendChild(div);
-     
+
       // Calling function to display form when 'BUY NOW' button is clicked
-      displayForm(vehicle);
+      displayForm({ id, make, model });
     });
   })
-  .catch(error => console.error('Error fetching data:', error));
+  .catch(error => console.error('Error fetching XML data:', error));
 
 // Function to display form when 'BUY NOW' button is clicked
 function displayForm(car) {
@@ -41,10 +58,8 @@ function displayForm(car) {
   const press = document.getElementById(`press${car.id}`);
   // Adding click event listener to the button
   press.addEventListener("click", () => {
-
     // Checking if form is not already displayed
     if (!document.getElementById(`F${car.id}`)) {
- 
       // Creating form element
       const form = document.createElement("form");
       form.id = `F${car.id}`;
@@ -52,20 +67,19 @@ function displayForm(car) {
       // Filling form with input fields
       form.innerHTML = `
         <h2>Please fill in the form below</h2>
-        <input id="name" type="text" placeholder="Enter your Name">
-        <input type="number" id="number" placeholder="Enter your Number">
+        <input id="name" type="text" placeholder="Enter your Name" required>
+        <input type="number" id="number" placeholder="Enter your Number" required>
         <button type="submit">FINISH</button>
       `;
-    
+
       // Appending form to the div containing vehicle details
       document.getElementById(car.id).appendChild(form);
-     
+
       // Calling function to submit form when 'FINISH' button is clicked
       submitForm(car);
     }
   });
 }
-
 
 // Function to handle form submission
 function submitForm(car) {
@@ -97,5 +111,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
-
-
