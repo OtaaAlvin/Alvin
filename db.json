@@ -8,7 +8,7 @@
         "color": "Red",
         "price": "Ksh 2500000",
         "mileage": 30000,
-        "photo": "./harrier.jpeg",
+        "photo": "Assets/harrier.jpeg"
       },
       {
         "id": 2,
@@ -18,7 +18,7 @@
         "color": "Blue",
         "price": "Ksh 2310000",
         "mileage": 35000,
-        "photo": "./civic.jpeg",
+        "photo": "Assets/civic.jpeg"
       },
       {
         "id": 3,
@@ -28,7 +28,7 @@
         "color": "Black",
         "price": "Ksh 10500000",
         "mileage": 25000,
-        "photo": "./ford.jpeg",
+        "photo": "Assets/ford.jpeg"
       },
       {
         "id": 4,
@@ -38,7 +38,7 @@
         "color": "White",
         "price": "Ksh 6000000",
         "mileage": 112000,
-        "photo": "./chevy.jpeg",
+        "photo": "Assets/chevy.jpeg"
       },
       {
         "id": 5,
@@ -48,7 +48,7 @@
         "color": "Green",
         "price": "Ksh 14000000",
         "mileage": 20000,
-        "photo": "./jeep.jpeg",
+        "photo": "Assets/jeep.jpeg"
       },
       {
         "id": 6,
@@ -58,7 +58,7 @@
         "color": "Silver",
         "price": "Ksh 2250000",
         "mileage": 28000,
-        "photo": "./altima.jpeg",
+        "photo": "Assets/altima.jpeg"
       },
       {
         "id": 7,
@@ -68,7 +68,7 @@
         "color": "Gray",
         "price": "Ksh 2800000",
         "mileage": 32000,
-        "photo": "./bmw.jpeg",
+        "photo": "Assets/bmw.jpeg"
       },
       {
         "id": 8,
@@ -78,7 +78,7 @@
         "color": "Black",
         "price": "Ksh 3800000",
         "mileage": 18000,
-        "photo": "./merc.jpeg",
+        "photo": "Assets/merc.jpeg"
       },
       {
         "id": 9,
@@ -88,7 +88,7 @@
         "color": "Silver",
         "price": "Ksh 29000000",
         "mileage": 25000,
-        "photo": "./gwagon.jpeg"
+        "photo": "Assets/gwagon.jpeg"
       },
       {
         "id": 10,
@@ -98,7 +98,7 @@
         "color": "White",
         "price": "Ksh 4200000",
         "mileage": 15000,
-        "photo": "./volvo.jpeg",
+        "photo": "Assets/volvo.jpeg"
       }
     ]
   }
